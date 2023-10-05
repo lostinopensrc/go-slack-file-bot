@@ -25,6 +25,15 @@
 
 
 
+### Running the go code 
+
+For quick run user can use below command : 
+
+go run main.go 
+
+### Verification 
+
+![File Uploaded](images/image7.PNG)
 
 
 
