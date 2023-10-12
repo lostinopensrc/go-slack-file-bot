@@ -11,7 +11,7 @@ import (
 
 func main() {
 
-	err := godotenv.Load("env/file.env")
+	err := godotenv.Load("../env/file.env")
 	if err != nil {
 		log.Fatalf("Error occured : %s", err)
 	}
@@ -22,7 +22,7 @@ func main() {
 	api := slack.New(slack_bot_token)
 	channelArr := []string{channel_id}
 
-	fileArr := []string{"myfile.txt"}
+	fileArr := []string{"../myfile.txt"}
 
 	for i := 0; i < len(fileArr); i++ {
 		params := slack.FileUploadParameters{
